@@ -41,12 +41,7 @@ public class DAOVersionadorBanco implements Serializable {
 		
 		resultSet.next();
 		
-		// return resultSet.getBoolean("rodado");
-		
-		boolean rodado = resultSet.getBoolean("rodado");
-	    System.out.println("File " + nome_do_arquivo + " already processed: " + rodado);
-	    return rodado;
-		
+		return resultSet.getBoolean("rodado");
 	}
 
 }

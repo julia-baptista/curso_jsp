@@ -48,8 +48,8 @@ CREATE TABLE IF NOT EXISTS public.model_login
  
     
 INSERT INTO public.model_login(
-	login, senha)
-	VALUES ('admin', 'admin');
+	login, senha, useradmin)
+	VALUES ('admin', 'admin', true);
 	
 	
 CREATE SEQUENCE IF NOT EXISTS public.telefone_seq
